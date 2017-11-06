@@ -6,9 +6,31 @@ html, body {
 }
 
 body {
-  background: url(../images/backgrounds/architecture.jpg) center no-repeat;
+  /*background: url(../images/backgrounds/architecture.jpg) center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+  background: linear-gradient(180deg, #02458f, #f4f5f5);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 43s ease infinite;
+  -moz-animation: AnimationName 43s ease infinite;
+  animation: AnimationName 43s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
 }
@@ -27,6 +49,7 @@ body {
 h1, h2 {
   font-family: 'Gabriela', serif;
   color: #fff;
+  text-align: center
 }
 
 h1 {
